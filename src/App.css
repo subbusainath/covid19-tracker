@@ -4,6 +4,7 @@
 .body{
 background-color: #f6f4fa;
 
+
 }
 .app {
   display: flex;
@@ -23,7 +24,10 @@ background-color: #f6f4fa;
 .app__stats{
   display: flex;
   justify-content: space-between;
+  
+
 }
+
 
 @media (max-width: 990px) {
   .app{

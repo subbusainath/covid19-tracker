@@ -1,10 +1,9 @@
 .table {
     margin-top: 20px;
     overflow: scroll;
-    height: 500px;
+    height: 400px;
     color: #6a5d5d;
 }
-
 .table tr{
  display: flex;
  justify-content: space-between;
