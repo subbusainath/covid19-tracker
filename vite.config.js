@@ -26,6 +26,8 @@ export default defineConfig({
             }
         }
     },
+    // Ensure public assets are copied
+    publicDir: 'public',
     test: {
         globals: true,
         environment: 'jsdom'
