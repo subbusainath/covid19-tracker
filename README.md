@@ -1,68 +1,180 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# COVID-19 Tracker 🦠
 
-## Available Scripts
+A modern, real-time COVID-19 statistics tracker built with React 18, Vite, and Material-UI (MUI) v5.
 
-In the project directory, you can run:
+![COVID-19 Tracker](https://img.shields.io/badge/COVID--19-Tracker-red)
+![React](https://img.shields.io/badge/React-18.2.0-blue)
+![Vite](https://img.shields.io/badge/Vite-5.2.8-646CFF)
+![MUI](https://img.shields.io/badge/MUI-5.15.15-0081CB)
 
-### `yarn start`
+## ✨ Features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Real-time COVID-19 data** from Disease.sh API
+- **Interactive dashboard** with statistics cards
+- **Country-wise data table** with sorting
+- **Dynamic charts** showing case trends over time
+- **Responsive design** for all devices
+- **Modern UI/UX** with Material-UI components
+- **Fast development** with Vite hot reload
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 🚀 Tech Stack
 
-### `yarn test`
+### Frontend
+- **React 18** - Latest React with concurrent features
+- **Vite** - Ultra-fast build tool and dev server
+- **Material-UI (MUI) v5** - Modern React component library
+- **Emotion** - CSS-in-JS styling
+- **Chart.js v4** - Beautiful interactive charts
+- **Numeral.js** - Number formatting
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Development
+- **Vitest** - Fast unit testing
+- **TypeScript support** - Type definitions included
+- **ES Modules** - Modern JavaScript module system
 
-### `yarn build`
+## 📦 Installation
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/covid19-tracker.git
+   cd covid19-tracker
+   ```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-### `yarn eject`
+4. **Open your browser**
+   Navigate to `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🛠️ Available Scripts
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Script            | Description                              |
+| ----------------- | ---------------------------------------- |
+| `npm run dev`     | Start development server with hot reload |
+| `npm run build`   | Build production-ready app               |
+| `npm run preview` | Preview production build locally         |
+| `npm run test`    | Run unit tests with Vitest               |
+| `npm run test:ui` | Run tests with UI interface              |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📊 Data Source
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This app uses the [Disease.sh API](https://disease.sh/) which provides:
+- Real-time global COVID-19 statistics
+- Country-wise data breakdown
+- Historical data for trend analysis
+- Reliable and frequently updated dataset
 
-## Learn More
+## 🏗️ Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+covid19-tracker/
+├── src/
+│   ├── components/
+│   │   ├── App.jsx          # Main application component
+│   │   ├── InfoBox.jsx      # Statistics display cards
+│   │   ├── LineGraph.jsx    # Chart component
+│   │   ├── Table.jsx        # Country data table
+│   │   ├── Map.jsx          # Map placeholder
+│   │   └── utils.js         # Utility functions
+│   ├── styles/
+│   │   ├── App.css          # Main application styles
+│   │   ├── Table.css        # Table-specific styles
+│   │   └── index.css        # Global styles
+│   └── main.jsx             # Application entry point
+├── public/                  # Static assets
+├── vite.config.js          # Vite configuration
+└── package.json            # Dependencies and scripts
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Features in Detail
 
-### Code Splitting
+### 📈 Interactive Dashboard
+- Real-time statistics cards showing cases, recoveries, and deaths
+- Hover effects and smooth animations
+- Color-coded indicators for different data types
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### 📊 Data Visualization
+- Line chart showing daily new cases trend
+- Interactive tooltips with formatted numbers
+- Responsive chart sizing for all devices
 
-### Analyzing the Bundle Size
+### 🗂️ Country Data Table
+- Sortable table with all country statistics
+- Scrollable interface for large datasets
+- Search and filter capabilities (coming soon)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### 📱 Responsive Design
+- Mobile-first approach
+- Optimized for tablets and desktops
+- Touch-friendly interface elements
 
-### Making a Progressive Web App
+## 🔧 Development
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Environment Setup
+Make sure you have Node.js 16+ installed:
+```bash
+node --version  # Should be 16+
+npm --version   # Should be 8+
+```
 
-### Advanced Configuration
+### Code Standards
+- Use JSX file extensions for React components
+- Follow ES6+ modern JavaScript syntax
+- Implement proper error handling
+- Add comments for complex logic
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Testing
+Run tests to ensure code quality:
+```bash
+npm run test          # Run all tests
+npm run test:ui       # Interactive test UI
+```
 
-### Deployment
+## 🚀 Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+### Build for Production
+```bash
+npm run build
+```
 
-### `yarn build` fails to minify
+This creates a `dist` folder with optimized production files.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Deploy Options
+- **Vercel**: Perfect for React apps with automatic deployments
+- **Netlify**: Static site hosting with continuous deployment
+- **GitHub Pages**: Free hosting for public repositories
+- **AWS S3**: Scalable cloud hosting solution
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Disease.sh](https://disease.sh/) for providing the COVID-19 data API
+- [Material-UI](https://mui.com/) for the beautiful component library
+- [Chart.js](https://www.chartjs.org/) for the charting capabilities
+- [Vite](https://vitejs.dev/) for the amazing development experience
+
+## 📞 Support
+
+If you have any questions or need help with setup, please open an issue on GitHub.
+
+---
+
+**Stay Safe! 😷 Keep tracking, keep healthy!**
